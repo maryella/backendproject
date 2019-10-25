@@ -9,7 +9,6 @@ class User {
         this.state = state;
         this.picture =  picture;
     }
-
     checkPassword(hashedPassword) {
         return bcrypt.compareSync(this.password, hashedPassword);
     }
@@ -50,8 +49,8 @@ class User {
             const response = await db.any(`SELECT * FROM winery_reviews;`);
             console.log('response', response);
             return response;
-        }catch(error){
-            return error.message
+        } catch(error){
+            return error.message;
         }
     }
 }
