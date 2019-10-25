@@ -1,1 +1,13 @@
-<h2> Winery Reviews</h2>
+
+<h3>Wineries</h3>
+<section>
+        <ul>
+            ${data.map(winery =>
+                `
+                <li><a href="wineries/${winery.id}">${winery.name}</a>
+                
+                    `).join('')}
+                </ul>
+                    
+        
+    </section>
