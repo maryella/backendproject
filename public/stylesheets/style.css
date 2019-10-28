@@ -6,3 +6,25 @@ body {
 a {
   color: #00B7FF;
 }
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+
+
+ .bg {
+  background-image: url("/images/fruits-grapes-grapevines-45209.jpg");
+  height: auto;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
