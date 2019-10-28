@@ -1,14 +1,14 @@
 
 
-body, html {
+html {
   height: 100%;
   margin: 0;
 }
 
 
 
- .bg {
-  background-image: url("/images/fruits-grapes-grapevines-45209.jpg");
+ body {
+  background: url("/images/fruits-grapes-grapevines-45209.jpg") no-repeat fixed center; 
   height: auto;
   width: 100%;
   background-position: center;
@@ -16,12 +16,11 @@ body, html {
   background-size: cover;
 }
 
-img {
-  width: 100%;
-  height: auto;
+.opaque {
+  background-color: rgba(245, 245, 245, 1);
+  opacity: .9;
 }
 
-textarea #review_content  {
-  width: 3em;
-  height: 3em;
+a {
+  color: #7510b0;
 }
