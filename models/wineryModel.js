@@ -14,7 +14,7 @@ class Winery {
     static async getAll() {
         try {
             const response = await db.any(`SELECT * from wineries;`);
-            console.log("response: ", response)
+         //   console.log("response: ", response)
             return response;
         } catch(error){
             return error.message;

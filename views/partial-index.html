@@ -1,13 +1,13 @@
 
-<h3>Wineries</h3>
+<h2>Wineries</h2>
 <section>
-        <ul>
+        <ul class="list-group list-group-flush">
             ${data.map(winery =>
                 `
-                <li><a href="wineries/${winery.id}">${winery.name}</a>
+                <li class="list-group-item"><a href="wineries/${winery.id}">${winery.name}</a>
                 
                     `).join('')}
                 </ul>
                     
         
-    </section>
+</section>

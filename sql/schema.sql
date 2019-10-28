@@ -17,7 +17,7 @@ CREATE TABLE wineries (
     street VARCHAR(200),
     city VARCHAR(200),
     state VARCHAR(50),
-    zip INTEGER(10), --added later
+    zip NUMERIC (10, 0), --added later
     primary_vine VARCHAR(50),
     picture VARCHAR(500)
 );

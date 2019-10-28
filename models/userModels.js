@@ -9,7 +9,6 @@ class User {
         this.state = state;
         this.picture =  picture;
     }
-
     checkPassword(hashedPassword) {
         return bcrypt.compareSync(this.password, hashedPassword);
     }
@@ -20,8 +19,6 @@ class User {
             [this.email]
             );
             const isValid = this.checkPassword(response.password);
-            console.log('is it valid?' , isValid);
-            
             if (!!isValid) {
                 const {id, name } = response;
                 return {isValid, id, name };
@@ -40,6 +37,7 @@ class User {
             const response = db.one(`INSERT INTO users (name, email, password, city, state) VALUES ($1,$2,$3,$4,$5) RETURNING id;`,
             [this.name, this.email, this.password, this.city, this.state]);
             //RETURNINGid add a row, auto increment
+            return response
         }catch (error) {
             return error.message;
         }
@@ -50,8 +48,8 @@ class User {
             const response = await db.any(`SELECT * FROM winery_reviews;`);
             console.log('response', response);
             return response;
-        }catch(error){
-            return error.message
+        } catch(error){
+            return error.message;
         }
     }
 }
