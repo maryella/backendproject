@@ -6,3 +6,8 @@ body {
 a {
   color: #00B7FF;
 }
+
+textarea #review_content  {
+  width: 3em;
+  height: 3em;
+}

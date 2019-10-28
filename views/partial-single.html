@@ -1,3 +1,13 @@
+<!-- style for testing purposes -->
+<style>
+td, th {
+    border: 2px solid black;
+    padding: 10px;
+}
+table {
+    border-collapse: collapse;
+}
+</style>
 <section>
     <p>
         ${wineryData.name}
@@ -7,6 +17,11 @@
         </ul>
 
     <table class="reviews">
+        <tr>
+            <th>User</th>
+            <th>Score</th>
+            <th>Review</th>
+        </tr>
         ${reviewsData.map(review => 
         `<tr>
             <td>${review.name}</td>
@@ -15,4 +30,14 @@
         </tr>`
     ).join('')}
     </table>
+
+    ${!!isLoggedIn ? `
+            <div>
+                <a href="/reviews/newreview/${wineryData.id}">Add Review</a>
+            </div>
+                ` : `
+                `}
+        </ul>
+    </nav>
+    <p></p>
 </section>

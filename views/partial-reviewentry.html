@@ -1,14 +1,16 @@
 
 <section>
-    <form action="reviews/addreview" method="POST">
+    <form action="../addreview/${wineryData.id}" method="POST">
+        <label></label>
         <label>
             Score
             <input type="number" name="review_score" placeholder="Score for Winery"/>
         </label>
+        <br>
         <label>
             Review
-            <input type="text" name="review_content" placeholder="Input Review">
+            <input type="text" name="review_content" placeholder="Input Review" id="review_content"></textarea>
         </label>
-        <button type="submit">Add New Review</button>
+        <button type="submit">Add Review</button>
     </form>       
 </section>

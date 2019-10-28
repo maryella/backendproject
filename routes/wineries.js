@@ -8,7 +8,8 @@ router.get("/", async function (req, res, next) {
     res.render("template", {
           locals: {
               title: "Wineries",
-              data: wineryData
+              data: wineryData,
+              isLoggedIn: req.session.is_logged_in
           },
           partials: {
               partial: "partial-single"
@@ -32,7 +33,7 @@ router.post("/addwinery", async (req, res) => {
 
 router.get("/:winery_id", async (req, res, next) => {
     const { winery_id } = req.params;
-    console.log("req param:", req.params)
+//    console.log("req param:", req.params)
     const winery = await wineryModel.getById(winery_id);
     const reviews = await wineryModel.reviewsById(winery_id);
     res.render("template", {
@@ -40,6 +41,7 @@ router.get("/:winery_id", async (req, res, next) => {
         title: winery.name,
         wineryData: winery,
         reviewsData: reviews,
+        isLoggedIn: req.session.is_logged_in
       },
       partials: {
         partial: "partial-single"
