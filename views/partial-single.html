@@ -30,12 +30,11 @@
 </div>
 
     ${!!isLoggedIn ? `
-            <div>
-                <a href="/reviews/newreview/${wineryData.id}">Add Review</a>
+            <div class="row mx-auto">
+                <button class="btn btn-outline-dark"><a class="h2" href="/reviews/newreview/${wineryData.id}">Add Review</a></button>
             </div>
                 ` : `
                 `}
-        </ul>
-    </nav>
+    
 </div>
 </div>
