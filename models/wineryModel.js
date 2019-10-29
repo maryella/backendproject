@@ -46,7 +46,7 @@ class Winery {
         try {
             const response = await db.result(`INSERT INTO wineries 
                                                 (name, address, street, city, state, primary_vine, zip) 
-                                                VALUES ($1, $2, $3, $4, $5, $6, $6);`, 
+                                                VALUES ($1, $2, $3, $4, $5, $7, $6);`, 
                                                 [this.name, this.address, this.street,
                                                 this.city, this.state, this.primary_vine, this.zip])
             console.log("addwinery:", response)

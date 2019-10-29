@@ -3,8 +3,7 @@
     <form action="../addreview/${wineryData.id}" method="POST">
         <div class="form-group">
             <label>Score</label>
-            <!-- <input type="range" class="form-control-range" id="formControlRange" name="score" min="0" max="100"> -->
-            <select class="form-control" aria-placeholder="Score" name="score">
+            <select class="form-control" aria-placeholder="Score" name="review_score">
                    <option>Choose..</option>
                    <option value="0">0</option>
                    <option value="1">1</option>
@@ -109,7 +108,7 @@
                     <option value="100">100</option>
             </select>
             <label>Review</label>
-            <textarea class="form-control" name="review_content" placeholder="Input Review" id="review_content">
+            <textarea class="form-control" name="review_content" id="review_content">
 
             </textarea>
             <!-- <input type="text" class="form-control" name="review_content" placeholder="Input Review" id="review_content"> -->
