@@ -10,4 +10,5 @@ Allows users to sign up and add reviews to wineries they've visited - or even ad
 
 Visitors who are not logged in can still see wineries & reviews but cannot make any additions or alterations.
 
-Developed with Rhonda McKenney
+Developed with Rhonda McKenney @rjmckenney
+
