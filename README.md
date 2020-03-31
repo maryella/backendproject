@@ -1,14 +1,21 @@
 # Winery Review Site
+### An app to learn about visiting local wineries
 
-### Back-end focused project for Digital Crafts August 2019 Cohort.
+![Screenshot of Project](https://maryella.dev/images/screenshot_winery.png)
 
-Built using Node/Express and PostgreSQL.
+JavaScript | Express | Node | PostgreSQL | BootStrap | Express ES6 Template Engine
 
-Views handled server side by Express using ES6 Render Templates. (Highly recommend this view engine!)
+### The Premise
+North Georgia has a surprising number of wineries. As interest in local products grows, it would be helpful to have easily accessible information on these wineries for people interested in patronizing them. Reviews allow users to share their experience and better prepare other for future visits. 
 
-Allows users to sign up and add reviews to wineries they've visited - or even add their favorite winery if it's not listed.
 
-Visitors who are not logged in can still see wineries & reviews but cannot make any additions or alterations.
+### The Tech
+Routes built using Node/Express.
+
+Views handled server side by Express using ES6 Template Engine and styled using Bootstrap.
+
+Data stored on PostgreSQL database, communicating with web app via pg-promise.
+
 
 Developed with Rhonda McKenney @rjmckenney
 
