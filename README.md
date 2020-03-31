@@ -14,7 +14,7 @@ Routes built using Node/Express.
 
 Views handled server side by Express using ES6 Template Engine and styled using Bootstrap.
 
-Data stored on PostgreSQL database, communicating with web app via pg-promise.
+Data for both users and wineries stored on PostgreSQL database, communicating with web app via pg-promise. User passwords in the database were protected using bcrypt-js (with salt and hash), which seemed sufficient security for this type of casual application.
 
 
 Developed with Rhonda McKenney @rjmckenney
