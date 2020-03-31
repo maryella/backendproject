@@ -3,7 +3,7 @@
 
 ![Screenshot of Project](https://maryella.dev/images/screenshot_winery.png)
 
-JavaScript | Express | Node | PostgreSQL | BootStrap | Express ES6 Template Engine
+JavaScript | Express | Node | PostgreSQL | Bootstrap | Express ES6 Template Engine
 
 ### The Premise
 North Georgia has a surprising number of wineries. As interest in local products grows, it would be helpful to have easily accessible information on these wineries for people interested in patronizing them. Reviews allow users to share their experience and better prepare other for future visits. 
